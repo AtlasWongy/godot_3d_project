@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtcyflbsmstqw"]
+
+[ext_resource type="PackedScene" uid="uid://boff06ebmqr75" path="res://characters/components/camera_component/camera_component.tscn" id="1_ma510"]
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05018, 0)
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+
+[node name="CameraComponent" parent="." instance=ExtResource("1_ma510")]
